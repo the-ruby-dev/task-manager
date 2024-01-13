@@ -1,9 +1,9 @@
-<h1>New task</h1>
+<div class="container pt-3">
+  <div class="d-flex justify-content-between">
+    <%= link_to "< Back to tasks", tasks_path %>
+  </div>
 
-<%= render "form", task: @task %>
-
-<br>
-
-<div>
-  <%= link_to "Back to tasks", tasks_path %>
+  <div class="my-4">
+    <%= render "form", task: @task %>
+  </div>
 </div>
