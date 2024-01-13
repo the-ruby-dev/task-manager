@@ -12,6 +12,16 @@
   </head>
 
   <body class="bg-light">
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand text-light" href="#">
+        <%= image_tag("icon.svg", :alt => "icon") %>
+        Task Manager
+      </a>
+      <form class="mx-3">
+        <input class="form-control d-inline-block w-auto align-middle mx-2" type="search" placeholder="Filter" aria-label="Filter">
+        <button class="btn btn-outline-success" type="submit">Filter</button>
+      </form>
+    </nav>
     <%= yield %>
   </body>
 </html>
